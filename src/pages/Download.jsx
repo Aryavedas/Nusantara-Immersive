@@ -174,7 +174,7 @@ export default function Download() {
 						</h3>
 
 						{/* Penjelasan Card */}
-						<p className="mt-2 text-base text-gray-600 flex-grow">
+						<p className="mt-2 text-base text-gray-600 grow">
 						{item.description}
 						</p>
 					</div>

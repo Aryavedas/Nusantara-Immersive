@@ -115,9 +115,9 @@ export default function Hero() {
 					alt="Eksplorasi VR Budaya Indonesia"
 					className="w-full h-full object-cover"
 					/>
-					<div className="absolute bottom-0 left-0 w-full p-5 bg-gradient-to-t from-black/60 to-transparent">
+					<div className="absolute bottom-0 left-0 w-full p-5 bg-linear-to-t from-black/60 to-transparent">
 					<h3 className="text-xl font-bold text-white">VR Candi Borobudur</h3>
-					<a href="/download" className="text-sm text-white/90">Mulai Eksplorasi</a>
+					<p className="text-sm text-white/90">Mulai Eksplorasi</p>
 					</div>
 				</div>
 				</div>

@@ -111,7 +111,7 @@ export default function Hero() {
 								group-hover:scale-105 group-hover:translate-y-0 
 								group-hover:shadow-emerald-500/30">
 					<img
-					src="/src/img/borobudur.jpg" // Path gambar Anda dipertahankan
+					src="/img/borobudur.jpg" // Path gambar Anda dipertahankan
 					alt="Eksplorasi VR Budaya Indonesia"
 					className="w-full h-full object-cover"
 					/>

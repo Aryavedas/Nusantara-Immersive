@@ -16,7 +16,7 @@ const dummyDownloads = [
     description:
       "Platform utama untuk mengakses semua destinasi budaya. Pengalaman terlengkap.",
     downloadLink: "https://drive.google.com/drive/folders/1YGEs2CZ6eo3NpTylJI9nqsiRP2bYMsix?usp=sharing",
-    imageUrl: "/src/img/borobudur.jpg",
+    imageUrl: "/img/borobudur.jpg",
     rating: "4.8",
     reviews: "1.2k",
     downloads: "50k+", // Metadata meyakinkan
@@ -32,7 +32,7 @@ const dummyDownloads = [
     title: "VR Borobudur Experience",
     description:"Fokus menjelajahi Candi Borobudur secara mendalam. Ukuran file lebih ringan.",
     downloadLink: "https://drive.google.com/drive/folders/1YGEs2CZ6eo3NpTylJI9nqsiRP2bYMsix?usp=sharing",
-    imageUrl: "/src/img/borobudur.jpg",
+    imageUrl: "/img/borobudur.jpg",
     rating: "4.5",
     reviews: "870",
     downloads: "10k+", // Metadata meyakinkan
@@ -48,7 +48,7 @@ const dummyDownloads = [
     title: "VR Museum Batik",
     description: "Jelajahi galeri virtual dan pelajari filosofi di balik setiap motif batik.",
     downloadLink: "https://drive.google.com/drive/folders/1YGEs2CZ6eo3NpTylJI9nqsiRP2bYMsix?usp=sharing",
-    imageUrl: "/src/img/borobudur.jpg",
+    imageUrl: "/img/borobudur.jpg",
     rating: "N/A", // Belum rilis
     reviews: "0",
     downloads: "0",

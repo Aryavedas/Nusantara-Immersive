@@ -86,10 +86,10 @@ const timelineData = [
 
 const teamData = [
   { id: 1, name: "Arya Veda Setyanindito", role: "CEO & Founder", imageUrl: "https://placehold.co/400x400/113F67/FFF?text=AP" },
-  { id: 2, name: "Randhika Bima", role: "Chief Technology Officer (CTO)", imageUrl: "https://placehold.co/400x400/059669/FFF?text=BL" },
-  { id: 3, name: "Syadatul Hayat", role: "Cultural Research Lead", imageUrl: "https://placehold.co/400x400/113F67/FFF?text=EN" },
+  { id: 2, name: "Randika Bima", role: "Chief Technology Officer (CTO)", imageUrl: "https://placehold.co/400x400/059669/FFF?text=BL" },
+  { id: 3, name: "Sya’adatul Hayat", role: "Cultural Research Lead", imageUrl: "https://placehold.co/400x400/113F67/FFF?text=EN" },
   { id: 4, name: "Nurul Fadillah", role: "Lead UI/UX Designer", imageUrl: "https://placehold.co/400x400/059669/FFF?text=DS" },
-  { id: 5, name: "Zaidan Arif", role: "Head of 3D Artists", imageUrl: "https://placehold.co/400x400/113F67/FFF?text=CW" },
+  { id: 5, name: "Zaidan Arif Purnama", role: "Head of 3D Artists", imageUrl: "https://placehold.co/400x400/113F67/FFF?text=CW" },
 ];
 
 export default function About() {

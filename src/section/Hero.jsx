@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaArrowRight, FaPlayCircle } from "react-icons/fa";
-import { FaMapMarkerAlt, FaVrCardboard, FaPalette } from "react-icons/fa";
+import { FaGamepad, FaVrCardboard, FaPalette } from "react-icons/fa";
 
 
 export default function Hero() {
@@ -56,10 +56,10 @@ export default function Hero() {
 						lg:gap-x-10 lg:gap-y-6">
 
 		<div className="flex items-center gap-2 lg:gap-3">
-			<FaMapMarkerAlt className="w-4 h-4 text-emerald-600 lg:w-6 lg:h-6" />
+			<FaGamepad className="w-4 h-4 text-emerald-600 lg:w-6 lg:h-6" />
 			<div>
 			<p className="text-lg font-bold text-[#113F67] lg:text-xl">6</p>
-			<p className="text-xs text-gray-500 lg:text-sm">Destinasi</p>
+			<p className="text-xs text-gray-500 lg:text-sm">Aplikasi</p>
 			</div>
 		</div>
 
@@ -76,7 +76,7 @@ export default function Hero() {
 		<div className="flex items-center gap-2 lg:gap-3">
 			<FaPalette className="w-4 h-4 text-emerald-600 lg:w-6 lg:h-6" />
 			<div>
-			<p className="text-lg font-bold text-[#113F67] lg:text-xl">100+</p>
+			<p className="text-lg font-bold text-[#113F67] lg:text-xl">6</p>
 			<p className="text-xs text-gray-500 lg:text-sm">Aset Budaya</p>
 			</div>
 		</div>
@@ -111,12 +111,12 @@ export default function Hero() {
 								group-hover:scale-105 group-hover:translate-y-0 
 								group-hover:shadow-emerald-500/30">
 					<img
-					src="/img/borobudur.jpg" // Path gambar Anda dipertahankan
+					src="/img/poster-benda-pusaka.png" // Path gambar Anda dipertahankan
 					alt="Eksplorasi VR Budaya Indonesia"
-					className="w-full h-full object-cover"
+					className="w-full h-full object-cover object-[25%_75%]"
 					/>
 					<div className="absolute bottom-0 left-0 w-full p-5 bg-linear-to-t from-black/60 to-transparent">
-					<h3 className="text-xl font-bold text-white">VR Candi Borobudur</h3>
+					<h3 className="text-xl font-bold text-white">VR Museum Benda Pusaka Indonesia</h3>
 					<p className="text-sm text-white/90">Mulai Eksplorasi</p>
 					</div>
 				</div>

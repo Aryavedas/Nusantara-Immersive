@@ -1,59 +1,111 @@
 import React, { useState, useEffect, useRef } from "react";
 // Impor ikon untuk tombol, badge, rating, dan metadata baru
-import { FaDownload, FaStar, FaSave } from "react-icons/fa"; // FaSave untuk ukuran file
+import { FaDownload, FaStar, FaSave, FaCalendarCheck } from "react-icons/fa"; // FaSave untuk ukuran file
 import { HiUsers } from "react-icons/hi"; // HiUsers untuk jumlah download
 
 // --- Data Dummy (Diperbarui dengan Metadata Baru) ---
 const dummyDownloads = [
-  {
-    id: 1,
-    badge: {
-      text: "Aplikasi Utama",
-      color: "emerald",
-      icon: <FaStar />,
-    },
-    title: "Nusantara Immersive",
-    description:
-      "Platform utama untuk mengakses semua destinasi budaya. Pengalaman terlengkap.",
-    downloadLink: "https://drive.google.com/drive/folders/1YGEs2CZ6eo3NpTylJI9nqsiRP2bYMsix?usp=sharing",
-    imageUrl: "/img/borobudur.jpg",
-    rating: "4.8",
-    reviews: "1.2k",
-    downloads: "50k+", // Metadata meyakinkan
-    size: "120 MB",  // Metadata meyakinkan
-  },
-  {
-    id: 2,
-    badge: {
-      text: "Rilis Baru",
-      color: "blue",
-      icon: null,
-    },
-    title: "VR Borobudur Experience",
-    description:"Fokus menjelajahi Candi Borobudur secara mendalam. Ukuran file lebih ringan.",
-    downloadLink: "https://drive.google.com/drive/folders/1YGEs2CZ6eo3NpTylJI9nqsiRP2bYMsix?usp=sharing",
-    imageUrl: "/img/borobudur.jpg",
-    rating: "4.5",
-    reviews: "870",
-    downloads: "10k+", // Metadata meyakinkan
-    size: "85 MB",   // Metadata meyakinkan
-  },
-  {
-    id: 3,
-    badge: {
-      text: "Coming Soon",
-      color: "gray", // Tambahan warna baru
-      icon: null,
-    },
-    title: "VR Museum Batik",
-    description: "Jelajahi galeri virtual dan pelajari filosofi di balik setiap motif batik.",
-    downloadLink: "https://drive.google.com/drive/folders/1YGEs2CZ6eo3NpTylJI9nqsiRP2bYMsix?usp=sharing",
-    imageUrl: "/img/borobudur.jpg",
-    rating: "N/A", // Belum rilis
-    reviews: "0",
-    downloads: "0",
-    size: "N/A",
-  },
+	{
+		id: 1,
+		badge: {
+			text: "Coming Soon",
+			color: "gray",
+			icon: <FaCalendarCheck />,
+		},
+		title: "Museum Benda Pusaka Indonesia",
+		description: "Platform utama untuk mengakses semua destinasi budaya. Pengalaman terlengkap.",
+		downloadLink: "https://drive.google.com/drive/folders/1YGEs2CZ6eo3NpTylJI9nqsiRP2bYMsix?usp=sharing",
+		imageUrl: "/img/poster-benda-pusaka.png",
+		rating: "0",
+		reviews: "0",
+		downloads: "5 Download", // Metadata meyakinkan
+		size: "120 MB",  // Metadata meyakinkan
+	},
+
+	{
+		id: 2,
+		badge: {
+			text: "Coming Soon",
+			color: "gray",
+			icon: <FaCalendarCheck />,
+		},
+		title: "Museum Bangunan Iconic Indonesia",
+		description: "Platform utama untuk mengakses semua destinasi budaya. Pengalaman terlengkap.",
+		downloadLink: "https://drive.google.com/drive/folders/1YGEs2CZ6eo3NpTylJI9nqsiRP2bYMsix?usp=sharing",
+		imageUrl: "/img/poster-bangunan-iconic.png",
+		rating: "4.8",
+		reviews: "1.2k",
+		downloads: "50k+", // Metadata meyakinkan
+		size: "120 MB",  // Metadata meyakinkan
+	},
+
+	{
+		id: 3,
+		badge: {
+			text: "Coming Soon",
+			color: "gray",
+			icon: <FaCalendarCheck />,
+		},
+		title: "VR Alat Musik Tradisional Nusantara",
+		description: "Platform utama untuk mengakses semua destinasi budaya. Pengalaman terlengkap.",
+		downloadLink: "https://drive.google.com/drive/folders/1YGEs2CZ6eo3NpTylJI9nqsiRP2bYMsix?usp=sharing",
+		imageUrl: "/img/poster-alat-musik.png",
+		rating: "4.8",
+		reviews: "1.2k",
+		downloads: "50k+", // Metadata meyakinkan
+		size: "120 MB",  // Metadata meyakinkan
+	},
+
+	{
+		id: 4,
+		badge: {
+		text: "Coming Soon",
+		color: "gray",
+		icon: <FaCalendarCheck />,
+		},
+		title: "VR Kuliner Nusantara",
+		description: "Platform utama untuk mengakses semua destinasi budaya. Pengalaman terlengkap.",
+		downloadLink: "https://drive.google.com/drive/folders/1YGEs2CZ6eo3NpTylJI9nqsiRP2bYMsix?usp=sharing",
+		imageUrl: "/img/poster-makanan-nusantara.png",
+		rating: "4.8",
+		reviews: "1.2k",
+		downloads: "50k+", // Metadata meyakinkan
+		size: "120 MB",  // Metadata meyakinkan
+	},
+
+	{
+		id: 5,
+		badge: {
+		text: "Coming Soon",
+		color: "gray",
+		icon: <FaCalendarCheck />,
+		},
+		title: "VR Pakaian Adat Nusantara",
+		description: "Platform utama untuk mengakses semua destinasi budaya. Pengalaman terlengkap.",
+		downloadLink: "https://drive.google.com/drive/folders/1YGEs2CZ6eo3NpTylJI9nqsiRP2bYMsix?usp=sharing",
+		imageUrl: "/img/poster-baju-adat.png",
+		rating: "4.8",
+		reviews: "1.2k",
+		downloads: "50k+", // Metadata meyakinkan
+		size: "120 MB",  // Metadata meyakinkan
+	},
+
+	{
+		id: 6,
+		badge: {
+		text: "Coming Soon",
+		color: "gray",
+		icon: <FaCalendarCheck />,
+		},
+		title: "VR Adat Istiadat Nusantara",
+		description: "Platform utama untuk mengakses semua destinasi budaya. Pengalaman terlengkap.",
+		downloadLink: "https://drive.google.com/drive/folders/1YGEs2CZ6eo3NpTylJI9nqsiRP2bYMsix?usp=sharing",
+		imageUrl: "/img/poster-budaya.png",
+		rating: "4.8",
+		reviews: "1.2k",
+		downloads: "50k+", // Metadata meyakinkan
+		size: "120 MB",  // Metadata meyakinkan
+	},
 ];
 
 // Fungsi helper untuk mapping warna badge (Diperbarui)

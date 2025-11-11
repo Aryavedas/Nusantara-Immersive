@@ -90,7 +90,7 @@ const teamData = [
 	{ 
 		id: 1, name: "Arya Veda Setyanindito", 
 		role: "Web Developer & Project Manager & 3D Artist", 
-		imageUrl: "/public/img/gambar-veda.jpeg",
+		imageUrl: "/img/gambar-veda.jpeg",
 		instagramUrl: "https://www.instagram.com/veedooo/",
 		instagramAlias: "@veedooo" 
 	},
@@ -98,7 +98,7 @@ const teamData = [
 	{ 
 		id: 2, name: "Randikabima Ridho Pradana", 
 		role: "Designer & 3D Artist", 
-		imageUrl: "/public/img/gambar-randika.jpeg", 
+		imageUrl: "/img/gambar-randika.jpeg", 
 		instagramUrl: "https://www.instagram.com/randbimarpr/",
 		instagramAlias: "@randbimarpr" 
 	},
@@ -106,7 +106,7 @@ const teamData = [
 	{ 
 		id: 3, name: "Sya’adatul Hayat", 
 		role: "Cultural Researcher", 
-		imageUrl: "/public/img/gambar-lulu.jpeg", 
+		imageUrl: "/img/gambar-lulu.jpeg", 
 		instagramUrl: "https://www.instagram.com/luluackermannn/",
 		instagramAlias: "@luluackermannn"
 	},
@@ -114,7 +114,7 @@ const teamData = [
 	{ 
 		id: 4, name: "Nurul Fadilah", 
 		role: "3D Artist", 
-		imageUrl: "/public/img/gambar-fadil.jpeg", 
+		imageUrl: "/img/gambar-fadil.jpeg", 
 		instagramUrl: "https://www.instagram.com/nrl.fadilah__/",
 		instagramAlias: "@nrl.fadilah__" 
 	},
@@ -122,7 +122,7 @@ const teamData = [
 	{ 
 		id: 5, name: "Zaidan Arif Purnama", 
 		role: "Game Developer & 3D Artist", 
-		imageUrl: "/public/img/gambar-zaidan.jpeg", 
+		imageUrl: "/img/gambar-zaidan.jpeg", 
 		instagramUrl: "https://www.instagram.com/zaedunns/",
 		instagramAlias: "@zaedunns" 
 	},

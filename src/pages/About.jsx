@@ -66,30 +66,66 @@ const tabContent = {
 const timelineData = [
   {
     year: "2025 - 8 November",
-    title: "Ide Lahir",
-    description: "Konsep 'Nusantara Immersive' pertama kali dicetuskan dari keprihatinan akan pelestarian budaya di era digital.",
+    title: " Tahap Inisiasi & Pengembangan Produk Minimum (MVP)",
+    description: "Riset Pasar, Desain UI/UX Awal, Pengembangan Fitur Dasar, Pengujian Internal",
     icon: <FaLightbulb />,
   },
+
   {
-    year: "2025 - 9 November",
-    title: "Prototipe Pertama",
-    description: "Prototipe 'VR Borobudur Experience' berhasil dikembangkan dan diuji coba ke pengguna terbatas.",
+    year: "2026",
+    title: "Tahap Peluncuran & Peningkatan Produk",
+    description: "Peluncuran Beta ke Target Audiens, Pengumpulan Data Pengguna, Iterasi Fitur Berdasarkan Feedback, Peningkatan Kinerja",
     icon: <FaRocket />,
   },
+
   {
-    year: "2025 - 20 November",
-    title: "Peluncuran Resmi",
-    description: "Platform Nusantara Immersive resmi diluncurkan dengan 6 destinasi budaya awal.",
+    year: "2027",
+    title: "Tahap Ekspansi",
+    description: "Penambahan Fitur, Pengembangan Strategi Pemasaran dari Hasil Evaluasi & Ekspansi Pasar Global",
     icon: <FaFlagCheckered />,
   },
 ];
 
 const teamData = [
-  { id: 1, name: "Arya Veda Setyanindito", role: "CEO & Founder", imageUrl: "https://placehold.co/400x400/113F67/FFF?text=AP" },
-  { id: 2, name: "Randika Bima", role: "Chief Technology Officer (CTO)", imageUrl: "https://placehold.co/400x400/059669/FFF?text=BL" },
-  { id: 3, name: "Sya’adatul Hayat", role: "Cultural Research Lead", imageUrl: "https://placehold.co/400x400/113F67/FFF?text=EN" },
-  { id: 4, name: "Nurul Fadillah", role: "Lead UI/UX Designer", imageUrl: "https://placehold.co/400x400/059669/FFF?text=DS" },
-  { id: 5, name: "Zaidan Arif Purnama", role: "Head of 3D Artists", imageUrl: "https://placehold.co/400x400/113F67/FFF?text=CW" },
+	{ 
+		id: 1, name: "Arya Veda Setyanindito", 
+		role: "Web Developer & Project Manager & 3D Artist", 
+		imageUrl: "/public/img/gambar-veda.jpeg",
+		instagramUrl: "https://www.instagram.com/veedooo/",
+		instagramAlias: "@veedooo" 
+	},
+
+	{ 
+		id: 2, name: "Randikabima Ridho Pradana", 
+		role: "Designer & 3D Artist", 
+		imageUrl: "/public/img/gambar-randika.jpeg", 
+		instagramUrl: "https://www.instagram.com/randbimarpr/",
+		instagramAlias: "@randbimarpr" 
+	},
+
+	{ 
+		id: 3, name: "Sya’adatul Hayat", 
+		role: "Cultural Researcher", 
+		imageUrl: "/public/img/gambar-lulu.jpeg", 
+		instagramUrl: "https://www.instagram.com/luluackermannn/",
+		instagramAlias: "@luluackermannn"
+	},
+
+	{ 
+		id: 4, name: "Nurul Fadilah", 
+		role: "3D Artist", 
+		imageUrl: "/public/img/gambar-fadil.jpeg", 
+		instagramUrl: "https://www.instagram.com/nrl.fadilah__/",
+		instagramAlias: "@nrl.fadilah__" 
+	},
+
+	{ 
+		id: 5, name: "Zaidan Arif Purnama", 
+		role: "Game Developer & 3D Artist", 
+		imageUrl: "/public/img/gambar-zaidan.jpeg", 
+		instagramUrl: "https://www.instagram.com/zaedunns/",
+		instagramAlias: "@zaedunns" 
+	},
 ];
 
 export default function About() {
@@ -207,7 +243,7 @@ export default function About() {
         {/* === 3. TIMELINE PERJALANAN === */}
         <div ref={timelineRef} className={`max-w-3xl mx-auto transition-all duration-1000 ease-out ${isTimelineLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#113F67] text-center mb-12">
-            Perjalanan Kami
+            Misi Perjalanan Kami
           </h2>
           <div className="relative pl-6">
             <div className="absolute left-0 top-1 bottom-1 w-0.5 bg-gray-200" aria-hidden="true"></div>
@@ -245,7 +281,7 @@ export default function About() {
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#113F67] text-center mb-12">
             Tim Hebat Kami
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {teamData.map((person) => (
               <div 
                 key={person.id} 
@@ -259,12 +295,28 @@ export default function About() {
                   className="w-32 h-32 rounded-full mx-auto object-cover 
                              border-4 border-white shadow-sm"
                 />
+                
+                {/* Nama Lengkap */}
                 <h3 className="mt-4 text-xl font-bold text-[#113F67]">
                   {person.name}
                 </h3>
+
+                {/* Peran */}
                 <p className="mt-1 text-sm font-semibold text-emerald-600">
                   {person.role}
                 </p>
+
+                {/* Alias Instagram sebagai Tautan */}
+                <a 
+                  href={person.instagramUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block mt-2 text-sm text-gray-500 font-medium 
+                             hover:text-pink-600 transition duration-300"
+                >
+                  {person.instagramAlias}
+                </a>
+
               </div>
             ))}
           </div>

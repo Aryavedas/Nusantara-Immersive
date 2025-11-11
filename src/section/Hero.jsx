@@ -15,7 +15,7 @@ export default function Hero() {
 	}, []);
 
   return (
-	<section className="relative w-full bg-white pt-12 lg:pt-28 lg:pb-32 magicpattern">
+	<section className="relative w-full bg-white pt-12 lg:pt-28 lg:pb-32 mb-10 magicpattern">
 		<div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 px-6 lg:px-8">			
 			{/* === Kolom Kiri: Teks & CTA === */}
 			<div className={`flex-2 text-left transition-all duration-1000 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>

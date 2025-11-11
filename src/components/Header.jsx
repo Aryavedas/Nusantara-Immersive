@@ -247,7 +247,7 @@ return (
                 </a>
 
                 {/* Navigasi DESKTOP (Muncul di 'md' ke atas) */}
-                <ul className="hidden md:ml-[-100px] md:flex space-x-8 items-center">
+                <ul className="hidden lg:ml-[-50px] md:flex space-x-8 items-center">
                 {desktopNavLinks.map((link) => (
                     <li key={link.id}>
                     <Link
@@ -287,7 +287,6 @@ return (
                     </a>
                 </div>
             </nav>
-            {/* Dropdown Menu Mobile (DIHAPUS) */}
         </header>
 
         {/* 2. BOTTOM NAV BAR (HANYA MUNCUL DI MOBILE) */}
